@@ -1,0 +1,72 @@
+body {
+	background-image: url('images/crossword.png')
+	}
+.page {
+	margin: 0px 100px;
+	margin-top: 60px;
+font-family: 'Ubuntu', sans-serif;
+}
+.showimage {
+	display: inline-block;
+}
+
+.hideimage {
+	display: none;
+}
+
+.next, .prev {
+	position: absolute;
+}
+
+.next {
+	left: 200px;
+}
+
+.carousel-in {
+	position: relative;
+	float: left;
+	margin-right: 20px;
+}
+img {
+	width: 350px;
+	height: auto;
+}
+.topright {
+	width: 200px;
+	height: auto;
+	border-radius: 50%;
+	float: right;
+}
+.header {
+	width: 100%;
+	height: 100px;
+	color: white;
+	background: black;
+	position: relative;
+	background: -webkit-linear-gradient(black, #474747); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(black, #474747); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(black, #474747); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(black, #474747); /* Standard syntax */
+	}
+
+h1 {
+	font-family: "Montserrat";
+	margin: 0px;
+	position: absolute;
+	left: 100px;
+	top: 20px;
+	letter-spacing: -1px;
+	font-size: 70px;
+}
+h3 {
+	font-weight: bolder;
+	font-size: 28px;
+	letter-spacing: -0.8px;
+}
+p {
+	letter-spacing: -0.5px;
+}
+.pleasure {
+	color: #B91919;
+	font-size: 30px;
+}
