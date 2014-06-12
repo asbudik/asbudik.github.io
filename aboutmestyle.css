@@ -1,10 +1,17 @@
+html {
+	height: 100%
+}
 body {
 	background-image: url('images/crossword.png')
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
 	}
 .page {
-	margin: 0px 100px;
+	margin: 0px 130px;
 	margin-top: 60px;
-font-family: 'Ubuntu', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	min-width: 1200px;
 }
 .showimage {
 	display: inline-block;
@@ -17,9 +24,28 @@ font-family: 'Ubuntu', sans-serif;
 .next, .prev {
 	position: absolute;
 }
-
+.prev {
+	top: 60px;
+	font-size: 60px;
+	padding: 10px;
+	left: -8px;
+}
 .next {
-	left: 200px;
+	left: 304px;
+	top: 60px;
+	font-size: 60px;
+	padding: 10px;
+}
+a:link, a:visited{
+	text-decoration: none;
+	font-family: "Montserrat";
+	color: white;
+	border: 2px dotted white;
+	text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+
+}
+a:hover{
+	font-size: 68px;
 }
 
 .carousel-in {
@@ -30,13 +56,72 @@ font-family: 'Ubuntu', sans-serif;
 img {
 	width: 350px;
 	height: auto;
+	border-radius: 4px;
+	border: rgba(0, 0, 0, .4) solid 2px;
 }
 .topright {
+	background: url('images/berkeley.jpg');
+	float: right;
+	width: 450px;
+	height: 230px;
+	margin-right: 120px;
+	margin-top: 40px;
+	border-radius: 4px;
+	position: relative;
+	border: rgba(0, 0, 0, .4) solid 2px;
+
+}
+.middle {
 	width: 200px;
 	height: auto;
-	border-radius: 50%;
-	float: right;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 60%;
+	
 }
+.bottomleft {
+	background: url('images/2.jpg');
+	width: 240px;
+	height: 320px;
+	float: left;
+	top: -140px;
+	display: block;
+	position: relative;
+	border-radius: 4px;
+	border: rgba(0, 0, 0, .4) solid 2px;
+}
+.desc {
+	position: absolute;
+	text-align: center;
+	font-weight: none;
+	padding: 10px 4px;
+	bottom: 0;
+	margin: 0;
+	height: 30px;
+	color: rgba(255,255,255,1);
+  	background-color: black;
+  	background: linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4));
+  	background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4));
+  	background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4));
+  	transition: height .5s;
+  	-webkit-transition: height .5s;
+  	-moz-transition: height .5s;
+}
+ .el {
+	float: right;
+	font-size: 30px;
+}
+  small {
+	opacity: 0;
+}
+.fulldesc p {
+	height: 70px;
+}
+.fulldesc small {
+	opacity: 1;
+}
+
 .header {
 	width: 100%;
 	height: 100px;
@@ -48,6 +133,11 @@ img {
   	background: -moz-linear-gradient(black, #474747); /* For Firefox 3.6 to 15 */
   	background: linear-gradient(black, #474747); /* Standard syntax */
 	}
+.intro {
+	top: -15px;
+	position: relative;
+	width: 600px;
+}
 
 h1 {
 	font-family: "Montserrat";
@@ -64,9 +154,72 @@ h3 {
 	letter-spacing: -0.8px;
 }
 p {
-	letter-spacing: -0.5px;
+	letter-spacing: -0.8px;
+	font-size: 15px;
+	font-weight: bold;
 }
-.pleasure {
+.pleasure, .pleasure1, .pleasure2 {
 	color: #B91919;
 	font-size: 30px;
+}
+.pleasure1 {
+	font-size: 44px;
+}
+.pleasure2 {
+	font-size: 50px;
+}
+.pleasure3 {
+	color: #B91919;
+}
+.circle {
+	background: #B91919;
+	height: 30px;
+	width: 70px;
+	border-radius: 80px 5px;
+	top: 59px;
+	left: 510px;
+	position: relative;
+}
+
+.opener {
+	font-size: 42px;
+
+}
+li {
+	font-size: 22px;
+	font-weight: bolder;
+	list-style-type: none;
+	line-height: 40px;
+}
+.born {
+	width: 1100px;
+}
+.skills1 {
+	margin-top: 20px;
+	width: 1110px;
+}
+.real {
+	position: relative;
+	left: 280px;
+	width: 820px;
+}
+.red {
+	color: red;
+}
+.contact {
+	z-index: -20;
+	left: 40px;
+	position: relative;
+}
+
+.footer {
+	margin-top: 80px;
+	width: 100%;
+	height: 70px;
+	background: black;
+	bottom: 0;
+	background: -webkit-linear-gradient(#474747, black); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(#474747, black); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(#474747, black); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(#474747, black); /* Standard syntax */
 }

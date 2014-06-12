@@ -15,13 +15,19 @@
     </head>
     <body>
         <div class="header">
+            <div class="circle"></div>
             <h1>adam budik</h1>
         </div>
         <div class="page">
-            <img class="topright" src="images/11.jpg">
 
-            <h3>It's a <span class="pleasure">pleasure</span> to meet you<span class="pleasure">!</span></h3>
-            <p>As you may have heard by now, my name is Adam Budik! I am currently residing in beautiful Berkeley, California. I absolutely love to create new and interesting things. I look for any opportunity I can to be able to express my "inner designer" and bring my acute sense of detail to life! My new interest has peaked in my fascination with both front and back-end web development, and I strive to strengthen these goals in any way I can!</p>
+            <div class="topright">
+                 <p class="desc">Berkeley, California: <span class="el"><strong>...</strong></span><br/>
+                    <small>I moved to Berkeley last year and have been enjoying it ever since! Definitely a step in the right direction. Hello oceans and trees, good-bye desert! Perfect weather and great food! My new home!</small>
+                </p>
+            </div>
+
+            <h3 class="opener">It's a <span class="pleasure1">pleasure</span> to meet you<span class="pleasure2">!</span></h3>
+            <p class="intro">As you may have heard by now, my name is Adam Budik! I am currently residing in beautiful <span class="red">Berkeley, California</span>. I absolutely love to create new and interesting things. I look for any opportunity I can to be able to express my "inner designer" and bring my acute sense of detail to life! My new interest has peaked in my fascination with both front and back-end web development, and I strive to strengthen these goals in any way I can!</p>
 
             <div class="carousel-in">
                 <a class="prev" href="#"><</a>
@@ -34,59 +40,78 @@
             </div>
 
             <h3><span class="pleasure">Born</span> and raised<span class="pleasure">...</span></h3>
-            <p>Is it in poor taste to use an "About Me" page to self promote my adoration for Las Vegas? Yup! Born in Las Vegas, I'll always love my hometown. The round-the-clock hustle and bustle of the city that never sleeps. Growing up in the beatiful Green Valley suburbs, I'd like to think of my childhood as a great one, and the diverse culture and the constant happenings around town definitely shaped me up to be a rather fine gentleman, if I may say so myself!</p>
+            <p class="born">Is it in poor taste to use an "About Me" page to self promote my adoration for my hometown? Yup! Born in <span class="red">Las Vegas, Nevada</span>, and I'll always love it there! The round-the-clock hustle and bustle of the city that never sleeps. Growing up in the beatiful Green Valley suburbs, I'd like to think of my childhood as a great one, and the diverse culture and the constant happenings around town definitely shaped me up to be a rather fine gentleman, if I may say so myself!</p>
 
             <h3>Any...relatable <span class="pleasure">skills</span> perhaps<span class="pleasure">?</span></h3>
-            <p>Clearly not! I look to aim for the stars, though. I've always been drawn to mediums that let my imagination flourish and bring those nifty ideas to life. At an early age, I absolutely loved to play the piano. It was such a beautiful thing to play, and an even more beautiful thing to hear. As my passion and abilities strengthened, I looked to create my own renditions of mesmerizing musical pieces that I wanted to bring to life with my own hands, and mesmerizing they were! As I grew older, I discovered the magical world of Photoshop. To have my ideas and passions be visually appreciated was nothing short of a dream and was the best thing I had ever poured my soul into...</p>
+            <p class="skills1"> I've always been drawn to mediums that let my imagination flourish and bring those nifty ideas to life. At an early age, I absolutely loved to play the piano. It was such a beautiful thing to play, and an even more beautiful thing to hear. As my passion and abilities strengthened, I looked to create my own renditions of mesmerizing musical pieces that I wanted to bring to life with my own hands, and mesmerizing they were! As I grew older, I discovered the magical world of <span class="red">Photoshop</span>. To have my ideas and passions be visually appreciated was nothing short of a dream and was the best thing I had ever poured my soul into...</p>
 
+      
             <img class="middle" src="images/10.jpg">
 
-            <p class="real">Until I discovered web programming. This is the big catch! If I ever really wanted to allow others (and myself) to dynamically interact and love my creations, this was definitely the place to be. I'm still a beginner, and what I know of web development mostly lies in Ruby. I hit several Ruby learning tools hard (I credit both <span class="treehouse">Treehouse</span>, Chris Pine's "<span class"learn">Learn to Program</span>," and GA's <span class=dash>Dash</span> primarily, for the knowledge I've been able to soak up) and while this learning experience has definitely been the most taxing, as well as rewarding, I find pride in what I am able to create and understand. Recently, I have turned to <span class="ga">General Assembly</span>'s WDI program in anticipation of the great opportunity to work and learn with others who share this passion that I do for the art of programming.</p>
+            <p class="real">Until I discovered web programming. This is the big catch! If I ever really wanted to allow others (and myself) to dynamically interact and love my creations, this was definitely the place to be. I'm still a beginner, and what I know of web development mostly lies in Ruby. I hit several Ruby learning tools hard (I credit primarily <span class="red">Treehouse</span>, Chris Pine's "<span class="red">Learn to Program</span>," and GA's "<span class=red>Dash</span>" for the knowledge I've been able to soak up) and while this learning experience has definitely been the most taxing, as well as rewarding, I find pride in what I am able to create and understand. Recently, I have turned to <span class="red">General Assembly</span>'s WDI program in anticipation of the great opportunity to work and learn with others who share this passion that I do for the art of programming.</p>
 
-            <img class="bottomleft" src="images/2.jpg">
+            <div class="bottomleft">
+                <p class="desc">Lobster vs. Man: <span class="el"><strong>...</strong></span><br />
+                    <small>Learning how to eat this thing was probably more complicated than programming. Probably.</small>
+                </p>
+            </div>
+            <div class="contact">
+                <h3>Cool, and your <span class="pleasure">contact</span> information is<span class="pleasure">...</span></h3>
+                 <p>Sure thing! I can't wait to hear from you!</p>
 
-            <h3>Cool, and your <span class="pleasure">contact</span> information is<span class="pleasure">...</span></h3>
-             <p>Sure thing! I can't wait to hear from you!</p>
-
-            <ul>
-                <li>(775) 253-4158</li>
-                <li>asbudik@live.com</li>
-            </ul>
+                <ul>
+                    <strong><li>(<span class="pleasure3">775</span>) 253-4158</li>
+                    <li>asbudik<span class="pleasure3">@</span>live.com</li></strong>
+                </ul>
+            </div>
         </div>
-
-        <script>
-        
-            $(".next").click(function(e){
-                var currentimage = $(".showimage");
-                var nextimage = currentimage.next();
-
-                if(nextimage.length == 0){
-                    nextimage = $(".carousel-in img").first();
-                }
-
-                currentimage.removeClass("showimage").addClass("hideimage").css("z-index", -10);
-                nextimage.addClass("showimage").removeClass("hideimage").css("z-index", 20);
-
-                $(".carousel-in img").not([showimage, hideimage]).css("z-index", 1);
-                e.preventDefault();
-            });
-
-            $(".prev").click(function(e){
-                var currentimage = $(".showimage");
-                var nextimage = currentimage.prev();
-
-                if(nextimage.length == 0){
-                    nextimage = $(".carousel-in img").last();
-                }
-
-                currentimage.removeClass("showimage").addClass("hideimage").css("z-index", -10);
-                nextimage.addClass("showimage").removeClass("hideimage").css("z-index", 20);
-
-                $(".carousel-in img").not([showimage, hideimage]).css("z-index", 1);
-                e.preventDefault();
-            })
-        
-
-        </script>
+        <div class="footer"></div>
     </body>
+    <script>
+        $(".bottomleft").on("click", function() {
+        $(this).toggleClass("fulldesc");
+        });
+    </script>
+    <script>
+        $(".topright").on("click", function() {
+        $(this).toggleClass("fulldesc");
+        });
+    </script>
+    <script>
+    
+        /* I really hate sending out broken code, but I really am stumped as to why the previous button will break randomly. 
+        It's probably something really tiny that I keep overlooking, too. I'm really sorry! */
+        
+        $(".next").click(function(e){
+            var currentimage = $(".showimage");
+            var nextimage = currentimage.next();
+
+            if(nextimage.length == 0){
+                nextimage = $(".carousel-in img").first();
+            }
+
+            currentimage.removeClass("showimage").addClass("hideimage").css("z-index", -10);
+            nextimage.addClass("showimage").removeClass("hideimage").css("z-index", 20);
+
+            $(".carousel-in img").not([showimage, hideimage]).css("z-index", 1);
+            e.preventDefault();
+        });
+
+        $(".prev").click(function(e){
+            var currentimage = $(".showimage");
+            var nextimage = currentimage.prev();
+
+            if(nextimage.length == 0){
+                nextimage = $(".carousel-in img").last();
+            }
+
+            currentimage.removeClass("showimage").addClass("hideimage").css("z-index", -10);
+            nextimage.addClass("showimage").removeClass("hideimage").css("z-index", 20);
+
+            $(".carousel-in img").not([showimage, hideimage]).css("z-index", 1);
+            e.preventDefault();
+        });
+    
+
+    </script>
 </html>
