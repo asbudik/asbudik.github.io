@@ -93,7 +93,7 @@
             currentimage.removeClass("showimage").addClass("hideimage").css("z-index", -10);
             nextimage.addClass("showimage").removeClass("hideimage").css("z-index", 20);
 
-            $(".carousel-in img").not([showimage, hideimage]).css("z-index", 1);
+            $(".carousel-in img").not([".showimage", ".hideimage"]).css("z-index", 1);
             e.preventDefault();
         });
 
@@ -108,7 +108,7 @@
             currentimage.removeClass("showimage").addClass("hideimage").css("z-index", -10);
             nextimage.addClass("showimage").removeClass("hideimage").css("z-index", 20);
 
-            $(".carousel-in img").not([showimage, hideimage]).css("z-index", 1);
+            $(".carousel-in img").not([".showimage", ".hideimage"]).css("z-index", 1);
             e.preventDefault();
         });
     
